@@ -12,8 +12,8 @@ class ExampleTest extends TestCase
      *
      * @return void
      */
-    public function testBasicTest()
+    public function testTestCommand()
     {
-        $this->assertTrue(true);
+        $this->artisan('test')->expectsOutput('<info>Just a test:</info> 123');
     }
 }
